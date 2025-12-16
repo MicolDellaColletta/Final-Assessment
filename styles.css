@@ -32,7 +32,6 @@ h3 {
 }
 
 /* Layout container */
-
 main {
   max-width: 1200px;
   margin: 0 auto;
@@ -40,7 +39,6 @@ main {
 }
 
 /* Header & branding */
-
 header {
   padding: 20px 0;
   border-bottom: 2px solid rgba(246, 230, 229, 0.35);
@@ -69,7 +67,6 @@ header {
 }
 
 /* Nav */
-
 nav {
   border-top: 2px solid rgba(246, 230, 229, 0.35);
   border-bottom: 2px solid rgba(246, 230, 229, 0.35);
@@ -115,13 +112,11 @@ nav a:hover::after {
 }
 
 /* Sections */
-
 section {
   padding: 2rem 0 2.5rem 0; /* un filo più spazio sotto */
 }
 
 /* Hero */
-
 .hero {
   text-align: center;
   margin: 2rem auto;
@@ -167,8 +162,7 @@ section {
   color: #3E293A;
 }
 
-/* Features */
-
+/* Features (3 colonne fisse) */
 .features {
   display: flex;
   justify-content: space-around;
@@ -176,7 +170,7 @@ section {
   gap: 2rem;
   padding: 2rem 0;
   text-align: center;
-  flex-wrap: nowrap; 
+  flex-wrap: nowrap; /* sempre 3 in riga */
   background-color: transparent;
   color: #F6E6E5;
 }
@@ -218,7 +212,6 @@ section {
 }
 
 /* Footer */
-
 footer {
   display: flex;
   justify-content: space-between;
@@ -244,7 +237,7 @@ footer img:hover {
   filter: brightness(1.1);
 }
 
-/* Mobile */
+/* Mobile: 3 colonne ma con possibile scroll orizzontale */
 @media (max-width: 768px) {
   .features {
     overflow-x: auto;
